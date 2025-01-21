@@ -1,0 +1,100 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for WebKit browsers */
+}
+
+body {
+  -ms-overflow-style: none; /* Hides scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    font-family: Urbanist, sans-serif;
+
+  }
+
+  :root {
+    --red-background: #f87171;
+    --orange-background: #fb923c;
+    --yellow-background: #fde047;
+    --green-1-background: #84cc16;
+    --green-2-background: #16a34a;
+    --green-3-background: #22c55e;
+    --purple-background: #818cf8;
+    --white-background: #fefce8;
+    --card-border: 2px #14532d solid;
+  }
+
+  
+  .card {
+    border: var(--card-border);
+    border-radius: 40px;
+  }
+  
+  .red {
+    background: var(--red-background);
+    .card {
+      background: var(--red-background);
+    }
+  }
+  
+  .orange {
+    background: var(--orange-background);
+    .card {
+      background: var(--orange-background);
+    }
+  }
+  
+  .yellow {
+    background: var(--yellow-background);
+    .card {
+      background: var(--yellow-background);
+    }
+  }
+  
+  .green-1 {
+    background: var(--green-1-background);
+    .card {
+      background: var(--green-1-background);
+    }
+  }
+  
+  .green-2 {
+    background: var(--green-2-background);
+    .card {
+      background: var(--green-2-background);
+    }
+  }
+  
+  .green-3 {
+    background: var(--green-3-background);
+    .card {
+      background: var(--green-3-background);
+    }
+  }
+  
+  .purple {
+    background: var(--purple-background);
+    .card {
+      background: var(--purple-background);
+    }
+  }
+  
+  .white {
+    background: var(--white-background);
+    .card {
+      background: var(--white-background);
+    }
+  }
+  
+  .card.selected {
+    background: #14532d;
+    color: white;
+  }
