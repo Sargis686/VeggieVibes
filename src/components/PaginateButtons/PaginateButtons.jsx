@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 import { veggiePages } from '../../data/veggieData';
-// import { veggiePages } from '../veggieData';
+
 
   export default function PaginateButtons({ currPage, setCurrPage }) {
 

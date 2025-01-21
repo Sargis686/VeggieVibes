@@ -1,6 +1,5 @@
 
 
-
 export default function ItemCard({ name, index, selectedIdx, setSelectedIdx, funFact }) {
     let verticalTranslateAmount;
     if (selectedIdx == null) {
